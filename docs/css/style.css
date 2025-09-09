@@ -2256,8 +2256,8 @@ h1, h2, h3, h4, h5,
   .site-section-cover .text-cursive {
     display: block !important;
     order: -1; /* sabse top */
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 800;
     margin-bottom: 20px; /* neeche gap */
     text-align: center;
     color: #e63946 !important; /* wahi red color */
@@ -2266,7 +2266,7 @@ h1, h2, h3, h4, h5,
   /* School Name */
   .site-navbar .site-logo {
     order: 0;
-    margin-bottom: 20px; /* gap */
+    margin-bottom: 100px; /* gap */
     text-align: center;
   }
 
@@ -2279,7 +2279,7 @@ h1, h2, h3, h4, h5,
 
   /* Social Icons */
   .site-navbar .top-social {
-    order: 2;
+    order: 1px;;
     margin-bottom: 20px; /* gap */
     text-align: center;
   }
@@ -2315,7 +2315,7 @@ h1, h2, h3, h4, h5,
     order: 1;
     font-size: 28px;
     font-weight: 600;
-    margin-top: 25px !important;  /* ⬅️ yahan gap adjust karo */
+    margin-top: 86px !important;  /* ⬅️ yahan gap adjust karo */
     margin-bottom: 300px !important;
     text-align: center;
     color: #e63946 !important;
@@ -2331,4 +2331,69 @@ h1, h2, h3, h4, h5,
   }
 }
 
+/* MOBILE: Show "Welcome..." right under school name (logo) */
+@media (max-width: 768px) {
+  /* 1) Hide the original welcome in hero to stop overlap */
+  .site-section-cover .text-cursive { 
+    display: none !important; 
+  }
 
+  /* 2) Center the school name and inject welcome below it */
+  .site-navbar .site-logo { text-align: center; }
+  .site-navbar .site-logo a { display: inline-block; }
+
+  .site-navbar .site-logo a::after {
+    content: "Welcome To Our Website";
+    display: block;
+    margin-top: 24px;          /* <-- yahan se gap control karo */
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 600;
+    font-family: 'Indie Flower', cursive; /* same cursive look */
+    color: #e63946;            /* same red color */
+  }
+
+  /* Optional: thoda extra gap before timings/icons/address if needed */
+  .site-quick-contact { margin-top: 12px; }
+}
+
+@media (max-width: 768px) {
+  /* Header ko flex column me laa do */
+  .site-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-navbar .site-logo {
+    margin-bottom: 15px; /* School name ke neeche space */
+  }
+
+  .welcome-text {
+    margin-bottom: 15px; /* Welcome ke neeche gap */
+  }
+
+  .site-social {
+    order: 3;             /* Welcome ke baad icons */
+    margin-bottom: 150px;  /* Icons ke neeche gap */
+    text-align: center;
+  }
+
+  .site-quick-contact {
+    order: 4;             /* Icons ke neeche address/timings */
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .site-social {
+    position: relative;
+    top: -25px;        /* is value ko adjust karo (-30, -35 bhi try kar sakte ho) */
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .site-quick-contact {
+    margin-top: 15px;  /* neeche ka gap safe */
+    text-align: center;
+  }
+}
