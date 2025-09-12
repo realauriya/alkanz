@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - AlKanz Islamic School System</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-12 h-12 bg-gray-200 rounded-full"><img src="images/LOGO.png" alt=""></div>
+                <span class="text-xl font-bold text-green-800">AlKanz Islamic School</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-green-800">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-green-800">About Us</a>
+                <a href="gallery.html" class="text-green-800 font-medium">Gallery</a>
+                <a href="contact.html" class="text-gray-600 hover:text-green-800">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero -->
+    <section class="py-16 bg-green-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4" data-aos="fade-up">Our School Gallery</h1>
+            <p class="text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">A glimpse into life at AlKanz Islamic School</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4">
+                <!-- <button class="px-4 py-2 bg-green-700 text-white rounded-full font-medium">All</button> -->
+                <!-- <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-full">Classrooms</button>
+                <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-full">Activities</button>
+                <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-full">Events</button>
+                <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-full">Facilities</button> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Classroom Images -->
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="zoom-in">
+                    <img src="images/img_1.jpg" alt="Classroom" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <!-- <h3 class="font-semibold text-green-800">Primary Classroom</h3>
+                        <p class="text-gray-600 text-sm">Our bright and engaging learning space</p> -->
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/img_2.jpg" alt="Quran Class" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <!-- <h3 class="font-semibold text-green-800">Quran Class</h3>
+                        <p class="text-gray-600 text-sm">Students learning proper Tajweed</p> -->
+                    </div>
+                </div>
+                
+                <!-- Activity Images -->
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/img_3.jpg"Science Fair" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <!-- <h3 class="font-semibold text-green-800">Science Fair</h3>
+                        <p class="text-gray-600 text-sm">Students showcasing their projects</p> -->
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="images/img_4.jpg" alt="Art Class" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <!-- <h3 class="font-semibold text-green-800">Islamic Art</h3>
+                        <p class="text-gray-600 text-sm">Learning traditional Islamic patterns</p> -->
+                    </div>
+                </div>
+                
+                <!-- Event Images -->
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="images/img_4.jpg" alt="Eid Celebration" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <!-- <h3 class="font-semibold text-green-800">Eid Celebration</h3>
+                        <p class="text-gray-600 text-sm">Annual school-wide Eid festival</p> -->
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="images/img_5.jpg" alt="Graduation" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <!-- <h3 class="font-semibold text-green-800">Graduation Day</h3>
+                        <p class="text-gray-600 text-sm">Celebrating our graduates' achievements</p> -->
+                    </div>
+                </div>
+                
+                <!-- Facility Images -->
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="images/img_2.jpg" alt="Library" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <!-- <h3 class="font-semibold text-green-800">School Library</h3>
+                        <p class="text-gray-600 text-sm">Resource center for students</p> -->
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="zoom-in" data-aos-delay="700">
+                    <img src="images/img_1.jpg" alt="Prayer Area" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <!-- <h3 class="font-semibold text-green-800">Prayer Area</h3>
+                        <p class="text-gray-600 text-sm">Dedicated space for Salah</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-green-800 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">See Our School in Person</h2>
+            <p class="text-xl max-w-2xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="100">Schedule a tour to experience our learning environment firsthand.</p>
+            <a href="contact.html" class="bg-white hover:bg-gray-100 text-green-800 px-8 py-3 rounded-lg font-medium inline-block transition duration-300" data-aos="fade-up" data-aos-delay="200">Book a Tour</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AlKanz Islamic School</h3>
+                    <p class="text-green-200">Providing quality Islamic education</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-green-200 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-green-200 hover:text-white">About Us</a></li>
+                        <li><a href="gallery.html" class="text-green-200 hover:text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-green-200 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Info</h4>
+                    <p class="text-green-200 mb-2"><i data-feather="map-pin" class="inline mr-2"></i>Dhoke miskeen near and under supervision by idara faizny mustafa Hassan abdal district attock</p>
+                    <p class="text-green-200 mb-2"><i data-feather="phone" class="inline mr-2"></i> 03118710692 , 03165834589</p>
+                    <p class="text-green-200"><i data-feather="mail" class="inline mr-2"></i> info@alkanzschool.edu</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-green-200 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-green-200 hover:text-white"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-green-200 hover:text-white"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-green-200 hover:text-white"><i data-feather="youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-green-800 mt-8 pt-8 text-center text-green-300">
+                <p>Copyright ©2025 All rights reserved Alkanz islamic school system|  designed by Makkiimaginations </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
